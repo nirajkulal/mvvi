@@ -5,5 +5,8 @@ install:
   - yes | sdkmanager --licenses
   - sdkmanager "platforms;android-33" "build-tools;33.0.2"
 
+  before_script:
+    - echo "Setting up the environment"
+  
 script:
   - ./gradlew clean build
