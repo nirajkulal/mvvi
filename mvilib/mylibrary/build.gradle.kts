@@ -67,7 +67,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.nirajkulal"
                 artifactId = "mylibrary"
-                version = "1.06"
+                version = "1.08"
             }
         }
     }
