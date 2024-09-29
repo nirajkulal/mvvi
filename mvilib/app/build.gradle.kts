@@ -5,6 +5,8 @@ plugins {
 
 android {
     namespace = "com.raj.mvi"
+    namespace = "com.raj.mylibrary"
+
     compileSdk = 34
 
     defaultConfig {

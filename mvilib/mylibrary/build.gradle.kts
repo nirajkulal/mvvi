@@ -10,7 +10,12 @@ android {
     compileSdk = 34
     buildToolsVersion  = "33.0.2"
 
+
     defaultConfig {
+        aarMetadata {
+            minCompileSdk = 29
+        }
+
         minSdk = 24
         targetSdk = 34
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -25,6 +30,9 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            aarMetadata {
+                minCompileSdk = 29
+            }
         }
     }
     compileOptions {
