@@ -6,9 +6,12 @@ plugins {
 android {
     namespace = "com.raj.mylibrary"
     compileSdk = 34
+    buildToolsVersion  = "33.0.2"
 
     defaultConfig {
         minSdk = 24
+        minSdk = 24
+        targetSdk = 34
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
