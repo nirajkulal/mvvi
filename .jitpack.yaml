@@ -2,7 +2,8 @@ jdk:
   - openjdk11
 
 install:
-  - ./gradlew clean
+  - yes | sdkmanager --licenses
+  - sdkmanager "platforms;android-33" "build-tools;33.0.2"
 
 script:
-  - ./gradlew build
+  - ./gradlew clean build
